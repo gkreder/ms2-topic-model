@@ -104,23 +104,30 @@ This produces the following files:
 | File      | Description |
 | ----------- | ----------- |
 | log.txt      | Contains the LLDA command and parameters passed through to the model as well as the t3 >= 1 and t3 >= 2 metrics for this run |
-| df_preds.tsv      | The predicted scores for each substructure in each test spectrum |
+| df\_preds.tsv      | The predicted scores for each substructure in each test spectrum |
 | iter\_*x*.tpy      | The LLDA model at iteration *x* (which can be loaded using Tomotopy) |
 | df\_train_indices.tsv      | The document index in the Tomotopy LLDA model for each document in the train spectra along with its corresponding filename and SMILES string |
+
+We note a few additional optional arguments to the LLDA model shown below 
+
+| Optional argument      | Description |
+| ----------- | ----------- |
+| mz\_cutoff      | Any spectrum fragments with m/z below this number will be excluded from the model. (default = 30.0)|
+| loss\_types      | Which neutral losses from spectra to include in the model. **none** includes no neutral losses. **parent** includes only neutral losses originating from the highest m/z fragment in the entire spectrum. **all** includes all neutral losses that have been assigned a molecular formula. (default = all) |
+| record\_perplexity      | If set to **True** will save model perplexities during each training iteration. (default= False)|
+| save\_interval      | The LLDA model will be saved in its entirety every *save\_interval* iterations. The last iteration will always be saved. (default = 500) |
+
+
 
 The k-NN model can be run using the following command:
 
 ```bash
-python run_baseline.py \
---Q <Q> \
---B <B> \
---out_dir <llda_out_directory> \
---train_mgf train.mgf \
---test_mgf test.mgf \
---documents_dir documents \
---df_substructs df_substructs.tsv \
---df_labels df_labels.tsv \
---num_iterations <number_iterations>
+python run_knn.py \
+--df_ids <df_ids_filename.tsv>
+--df_labels <df_labels_filename.tsv> \
+--k 10 \
+--embedded_spectra <embedded_spectra_fileName.npz> \
+--out_dir <knn_out_directory> 
 ```
 
 | File      | Description |
