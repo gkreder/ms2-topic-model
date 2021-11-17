@@ -2,7 +2,11 @@
 
 gkreder@gmail.com
 
+Please note that this github repo only contains the **code** directory mentioned below. The **data** directory (and a copy of the same code) is available in the Zenodo repository at https://doi.org/10.5281/zenodo.4655149
+
 ## Data
+
+The **data** is available in the Zenodo repository https://doi.org/10.5281/zenodo.4655149
 
 The **data** directory contains the data necessary for running the experiments described in the paper. Specifically the files included are the following:
 
