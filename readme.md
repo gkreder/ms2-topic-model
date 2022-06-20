@@ -81,7 +81,7 @@ python make_documents.py \
 --eval_peak_script evaluate_peak.R \
 --n_jobs 1 \
 --adduct_element H \
---adduct_element 1
+--adduct_number 1
 ```
 
 This script must be pointed to the evaluate_peak.R script included with this code base. Note that this is a fairly time consuming step. In our tests generating a single spectrum using a single thread could take more than 2 minutes depending on the spectrum. The --n\_jobs flag allows for parallelization of formula finding over multiple threads and speeds up the process considerably if multiple cores are available. The --adduct\_element and --adduct\_number arguments specify if an additional element should be added to each spectrum's molecular formula before fitting molecular formulas. 
