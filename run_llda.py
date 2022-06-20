@@ -141,7 +141,7 @@ for spec in tqdm(mgf.MGF(args.test_mgf), total = n_test_spectra):
 	nc = np.unique(doc, return_counts=True)
 	dfc = pd.DataFrame(nc[1], columns = ['current_doc'], index = nc[0]).reindex(dftw.index, fill_value = 0.0)
 	if dfc['current_doc'].sum() == 0:
-		print(f'Error no overlap {s_fname}')
+		print(f'No overlap - {s_fname}')
 		cos_sims = [0 for x in dftw.columns]
 	else:
 		cos_distances = [scipy.spatial.distance.cosine(dfc['current_doc'], dftw[c]) for c in dftw.columns]
