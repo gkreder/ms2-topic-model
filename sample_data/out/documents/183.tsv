@@ -1,0 +1,4 @@
+mz	intensity	rcdk_assignment_top	rcdk_top_mass	rcdk_all_outputs	formula	index	from_index	to_index
+123.02293	2.29	C10H3	123.02347509669	0.0005450966900042431	C10H3	frag_0		
+151.01784	100.0	C11H3O	151.01838971626	0.0005497162599965577	C11H3O	frag_1		
+27.994910000000004	51.145				CO	loss_0	frag_1	frag_0

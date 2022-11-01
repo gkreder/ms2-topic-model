@@ -1,0 +1,14 @@
+ipykernel
+ipython
+lxml
+molmass
+numpy
+pandas
+pyteomics
+rdkit>=2020.09.5
+scikit-learn
+scipy
+seaborn
+tomotopy==0.10.2
+tqdm
+xlrd

@@ -1,0 +1,19 @@
+name: ms2Topic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - rdkit>=2020.09.5
+  - jupyterlab
+  - seaborn
+  - matplotlib
+  - pandas
+  - xlrd
+  - tqdm
+  - scipy
+  - scikit-learn
+  - pip:
+    - tomotopy==0.10.2
+    - pyteomics
+    - molmass
+

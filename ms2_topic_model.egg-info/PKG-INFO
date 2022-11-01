@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ms2-topic-model
+Version: 1.0
+Summary: Code base for LLDA based MS2 substructure prediction
+Home-page: http://github.com/gkreder/ms2-topic-model
+Author: Gabriel Reder
+Author-email: gkreder@gmail.com
+License: MIT
+License-File: LICENSE

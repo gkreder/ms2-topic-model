@@ -1,0 +1,4 @@
+mz	intensity	rcdk_assignment_top	rcdk_top_mass	rcdk_all_outputs	formula	index	from_index	to_index
+98.09643	45.7	C6H12N	98.09697439119	0.0005443911900044895	C6H12N	frag_0		
+276.1262	55.46	C18H16N2O	276.12626314411	6.314411001540066e-05	C18H16N2O	frag_1		
+178.02976999999998	50.58				C12H4NO	loss_0	frag_1	frag_0
